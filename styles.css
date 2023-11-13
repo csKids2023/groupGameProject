@@ -1,0 +1,120 @@
+body{
+    background-color:#b3c2f2;
+    font-family: "Comic Sans";
+}
+
+section{
+    align-items: center;
+    text-align: right;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    /* border: 10px solid darkgrey; */
+    border-left: 10px solid white;
+    border-bottom: -15px solid white;
+    border-right: 5px solid white;
+    border-top: -15px solid white;
+    width: 200px;
+    /* text-align: right; */
+}
+
+
+a{
+    color:#441add;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    /* color: purple; */
+    /* border: 5px solid white; */
+    /* background-color: white; */
+}
+
+h1{
+    /* border: 5px ridge #1A88D0; */
+    color:#441add;
+    font-size: 45px;
+    text-align: center;
+}
+
+
+h2{
+    color:black;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+h3{
+    text-align: left;
+}
+
+
+#p20{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+#p15{
+    font-size: 15px;
+    text-align: left;
+}
+
+
+#b17{
+    font-size: 17px;
+    color:black;
+}
+
+
+#hrd{
+    border: 5px solid white;
+    margin-left: -3px;
+    margin-right: -3px;
+}
+
+#p-left-align{
+    /* For About the Creators only "CityUndercover" */
+    text-align: left;
+    font-weight: bold;
+    font-size: 27px;
+    color: #1A88D0;
+}
+
+
+#hr-atc{
+    border: 3px solid white;
+}
+#h1-atc{
+    color: #441add;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: -15px;
+}
+#img-atc{
+    height: 100px;
+}
+#h2-atc{
+    color:#441add;
+    font-size: 30px;
+    text-align: center;
+
+
+}
+#pRole-atc{
+    /* color: blue; */
+    margin-top: -15px;
+    font-size: 15px;
+    text-align: center;
+}
+#p15-atc{
+    font-size: 15px;
+    text-align: left;
+}
+
+#People-Discription{
+    text-align: left;
+}
