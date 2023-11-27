@@ -13,8 +13,8 @@
     </head>
 
     <body>
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <nav class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
             <div id="myDropdown" class="dropdown-content">
               <a href="index.html">Home</a>
               <a href="GameClips.html">Game Clips</a>
@@ -23,16 +23,36 @@
               <a href="GameInstructions.html">Game Instructions</a>
 
             </div>
-          </div>
+        </nav>
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+        </script>
+
+        <header>
+            <h1 id="h1-title">City Undercover</h1>
+        </header>
         
-        <div>
-            <div id="mainpage" style="width:100%; height:100%; position: absolute; left:0; top:0; background-image: url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D'); background-repeat: no-repeat; background-size: cover;">
-                <center><h1 id="h1-title">City Undercover</h1></center>
-                <button onclick="location.replace('https://play.google.com/store/apps/category/GAME?hl=en_US&gl=US&pli=1');" id="play" style="font-family: 'Kdam Thmor Pro', sans-serif; position: absolute; left:42.5%; top:56%; width:15%; height:15%; font-size: 50px;">PLAY NOW</button>
-            </div>
-            <div id="home" style="position: absolute; top:100%;">
+        <main>
             <center><div>
-                <b><h1 id="">Game Description</h1></b>
+                <b><h1>Game Description</h1></b>
                 <hr id="hrd">
                 <p id="p20">This game is a cop roleplay game, where you choose your own adventure
                     by picking different options to continue the story line.
@@ -48,7 +68,6 @@
                     Officer Max Inferno, a corrupt and ambitious cop, resents Harris's success 
                     and secretly plots to undermine him.</p>
             </div></center>
-            </div>
 
             <center><div id="characters">
                 <b><h1>Characters</h1></b>
@@ -79,13 +98,6 @@
                     Officer Max Inferno, a corrupt and ambitious cop, resents Harris's success 
                     and secretly plots to undermine him.</p>
             </div></center>
-
-            <div>
-                <b><h1>Game Clips</h1></b>
-                <hr id="hrd">
-                <!-- Video here delete the following -->
-                <P id="p20">[video clips here]</P>
-            </div>
-        </div>
+        </main>
     </body>
 </html>
