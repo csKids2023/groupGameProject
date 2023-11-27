@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
+
+@keyframes PlayAnimation {
+    from {
+        font-family: 'Kdam Thmor Pro', sans-serif; position: absolute; left:42.5%; top:56%; width:15%; height:10%; font-size: 50px;
+    }
+
+    to {
+        font-family: 'Kdam Thmor Pro', sans-serif; position: absolute; left:45%; top:57%; width:10%; height:5%; font-size: 30px;
+    }
+}
+
 body{
     background-color:#b3c2f2;
     font-family: "Comic Sans";
@@ -39,6 +51,15 @@ h1{
     text-align: center;
 }
 
+#h1-title{
+    color: white;
+    font-size: 75px;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    position: absolute;
+    left:38%;
+    top:36%;
+}
 
 h2{
     color:black;
@@ -117,4 +138,12 @@ h3{
 
 #People-Discription{
     text-align: left;
+}
+
+#play:hover {
+    animation: PlayAnimation 0.5s forwards;
+}
+
+#play::after {
+    animation: PlayAnimation 0.5s backwards;
 }
