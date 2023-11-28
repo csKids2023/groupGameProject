@@ -86,9 +86,6 @@ h1{
     font-size: 75px !important;
     font-family: 'Dosis', sans-serif !important;
     text-align: center !important;
-    position: absolute !important;
-    left:38%;
-    top:36%;
 }
 
 h2{
@@ -179,5 +176,5 @@ h3{
 }
 
 header{
-    display: inline;
+    
 }
