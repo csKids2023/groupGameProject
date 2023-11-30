@@ -1,91 +1,105 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>About the Creators</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+  <head>
+    <title>About the Creators</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
 
-    <body>
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Menu</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="index.html">Home</a>
-              <a href="GameClips.html">Game Clips</a>
-              <a href="BadgesAndAchievements.html">Badges and Achievements</a>
-              <a href="AboutTheCreators.html">About the Creators</a>
-              <a href="GameInstructions.html">Game Instructions</a>
+  <body>
+    <nav class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Menu</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="">Play Now!</a>
+        <a href="GameInstructions.html">Game Instructions</a>
+        <a href="GameClips.html">Game Clips</a>
+        <a href="BadgesAndAchievements.html">Badges and Achievements</a>
+        <a href="AboutTheCreators.html">About the Creators</a>
+      </div>
+    </nav>
 
-            </div>
-          </div>
-          <script>
-            /* When the user clicks on the button, 
-            toggle between hiding and showing the dropdown content */
-            function myFunction() {
-              document.getElementById("myDropdown").classList.toggle("show");
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+          
+        // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
             }
-            
-            // Close the dropdown if the user clicks outside of it
-            window.onclick = function(event) {
-              if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                  }
-                }
-              }
-            }
-            </script>
-            
-        <section>
-            <img src=""> <!--Headshot / yearbook pic-->
-            <h2 id="h2-atc">Gulara Allahverdi</h2> <!--Name, check spelling-->
-            <p id="pRole-atc">Website Manager</p> <!--Role-->
-            <hr id="hr-atc">
-            <p id="People-Discription">She was the Project Manager, making sure everyone does their work 
-            and everything flows smoothly. She was also part of the HTML developer and website designer. 
-            Some background information about her is, her favorite subjects are Math and Science. Her electives
-            are Spanish, Intro to Computer, and Tennis. Her favorite activities are reading, solving puzzles, 
-            watching movies, playing the piano, and hanging out with friends. Her favorite book is the Inheritance Games. 
-            She likes hanging out with her friends inside and outside of school. She also likes going to the beach with her family. </p>
-        </section>
+          }
+        }
+      }
+    </script>
+          
+    <section>
+      <!--<img src="">--> <!--Headshot / yearbook pic-->
+      <h2 id="h2-atc">Gulara Allahverdi</h2> <!--Name, check spelling-->
+      <p id="pRole-atc">Website Manager</p> <!--Role-->
+      <hr id="hr-atc">
+      <p id="People-Discription">
+        She was the Project Manager, making sure everyone does their work 
+        and everything flows smoothly. She was also part of the HTML developer and website designer. 
+        Some background information about her is, her favorite subjects are Math and Science. Her electives
+        are Spanish, Intro to Computer, and Tennis. Her favorite activities are reading, solving puzzles, 
+        watching movies, playing the piano, and hanging out with friends. Her favorite book is the Inheritance Games. 
+        She likes hanging out with her friends inside and outside of school. She also likes going to the beach with her family. 
+      </p>
+    </section>
 
-        <section>
-            <img src=""> <!--Headshot / yearbook pic-->
-            <h2 id="h2-atc">Katelyn Kerr</h2> <!--Name-->
-            <p id="pRole-atc">CSS Developer</p> <!--Role-->
-            <hr id="hr-atc">
-            <p id="People-Discription">Katelyn was incharge of the CSS programming, designing the style of the website. 
-              Her favorite subjects are Math and Science. Her electives are Spanish, Band, and Intro to Comp Sci. 
-              Her favorite activities are swimming, reading, solving puzzles, spending time with friends and family. 
-              Katelyn’s favorite book is the Inheritance Games.
-              </p>
-        </section>
+    <section>
+      <!--<img src="">--> <!--Headshot / yearbook pic-->
+      <h2 id="h2-atc">Katelyn Kerr</h2> <!--Name-->
+      <p id="pRole-atc">CSS Developer</p> <!--Role-->
+      <hr id="hr-atc">
+      <p id="People-Discription">
+        Katelyn was incharge of the CSS programming, designing the style of the website. 
+        Her favorite subjects are Math and Science. Her electives are Spanish, Band, and Intro to Comp Sci. 
+        Her favorite activities are swimming, reading, solving puzzles, spending time with friends and family. 
+        Katelyn’s favorite book is the Inheritance Games.
+      </p>
+    </section>
 
-        <section>
-            <img src=""> <!--Headshot / yearbook pic-->
-            <h2 id="h2-atc">Luke Kneese</h2> <!--Name-->
-            <p id="pRole-atc">HTML Developer</p> <!--Role-->
-            <hr id="hr-atc">
-            <p id="People-Discription">[About Luke]</p>
-        </section>
+    <section>
+      <!--<img src="">--> <!--Headshot / yearbook pic-->
+      <h2 id="h2-atc">Luke Kneese</h2> <!--Name-->
+      <p id="pRole-atc">HTML Developer</p> <!--Role-->
+      <hr id="hr-atc">
+      <p id="People-Discription">
+        [About Luke]
+      </p>
+    </section>
 
-        <section>
-            <img src=""> <!--Headshot / yearbook pic-->
-            <h2 id="h2-atc">Mark Schmidl</h2> <!--Name-->
-            <p id="pRole-atc">Game Design Manager</p> <!--Role-->
-            <hr id="hr-atc">
-            <p id="People-Discription">[About Mark]</p>
-        </section>
+    <section>
+      <!--<img src="">--> <!--Headshot / yearbook pic-->
+      <h2 id="h2-atc">Mark Schmidl</h2> <!--Name-->
+      <p id="pRole-atc">Game Design Manager</p> <!--Role-->
+      <hr id="hr-atc">
+      <p id="People-Discription">
+        [About Mark]
+      </p>
+    </section>
 
-        <section>
-            <img src=""> <!--Headshot / yearbook pic-->
-            <h2 id="h2-atc">Jefferson Lee</h2> <!--Name-->
-            <p id="pRole-atc">Game Designer</p> <!--Role-->
-            <hr id="hr-atc">
-            <p id="People-Discription">[About Jefferson]</p>
-        </section>
-    </body>
+    <section>
+      <!--<img src="">--> <!--Headshot / yearbook pic-->
+      <h2 id="h2-atc">Jefferson Lee</h2> <!--Name-->
+      <p id="pRole-atc">Game Designer</p> <!--Role-->
+      <hr id="hr-atc">
+      <p id="People-Discription">
+        Jefferson was also in charge of doing the Unity Game. Him and Mark worked together to complete the game which
+        was later put into our website. He was also the “Thinker” and gave us creative ideas on what we can do. 
+        His electives are Computer Science, Speech, and Chinese. His favorite activities are eating rice and making 
+        DIY shoes. He also has a big interest in coding. He likes watching YouTube in his free time. 
+
+      </p>
+    </section>
+  </body>
 </html>

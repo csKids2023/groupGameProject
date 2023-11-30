@@ -1,18 +1,17 @@
 <!DOCTYPE html> 
 <html>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
-
     <head>
         <title>
             Mini Project Website
         </title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap">
     </head>
 
-    <body>
+    <body onload="console.log('DO NOT PASTE ANYTHING IN THE CONSOLE IF YOU DO NOT KNOW WHAT YOU ARE DOING. IT COULD POTENTIALLY BE MALICIOUS AND HARM YOUR DATA.');">
         <nav class="dropdown">
             <button onclick="myFunction()" class="dropbtn">Menu</button>
             <div id="myDropdown" class="dropdown-content">
@@ -45,6 +44,13 @@
                 }
               }
             }
+            console.log(navigator.language);
+            console.log(navigator.onLine);
+            console.log(navigator.requestMIDIAccess());
+            console.log(navigator.requestMediaKeySystemAccess());
+            console.log(navigator.pdfViewerEnabled);
+            console.log(navigator.hardwareConcurrency);
+            console.log(navigator.storage);
         </script>
 
         <header>
@@ -55,7 +61,8 @@
             <center><div>
                 <b><h1>Game Description</h1></b>
                 <hr id="hrd">
-                <p id="p20">This game is a cop roleplay game, where you choose your own adventure
+                <p id="p20">
+                    This game is a cop roleplay game, where you choose your own adventure
                     by picking different options to continue the story line.
                 </p>
             </div></center>
@@ -63,42 +70,67 @@
             <center><div>
                 <b><h1>Story</h1></b>
                 <hr id="hrd">
-                <p id="p20">Inspector Daniel Harris, a dedicated and by-the-book cop, 
+                <p id="p20">
+                    Inspector Daniel Harris, a dedicated and by-the-book cop, 
                     has just received a promotion within the precinct. 
                     He's well-liked by his colleagues, but not everyone is thrilled about his ascent. 
                     Officer Max Inferno, a corrupt and ambitious cop, resents Harris's success 
-                    and secretly plots to undermine him.</p>
+                    and secretly plots to undermine him.
+                </p>
             </div></center>
 
             <center><div id="characters">
                 <b><h1>Characters</h1></b>
                 <hr id="hrd">
+                
                 <p id="p20"><b id="b17">Protagonists:</b><br>Inspector Daniel Harris</p>
-                <p id="p15">A brave and noble cop, committed to justice. He began his career as an investigator after graduating from top college.</p>
+                <p id="p15">
+                    A brave and noble cop, committed to justice. He began his career as an investigator after graduating from top college.
+                </p>
+
                 <p id="p20"><b id="b17">Antagonist: </b><br>Officer Max Inferno</p>
-                <p id="p15">An evil and corrupt person that lacks morals. Envies Daniel's success. Graduated behind Daniel and is now working in an organization, TITANIUM.</p>
+                <p id="p15">
+                    An evil and corrupt person that lacks morals. Envies Daniel's success. Graduated behind Daniel and is now working in an organization, TITANIUM.
+                </p>
+
                 <p id="p20"><b id="b17">Officer's Partner: </b><br>Detective Mike Sullivan</p>
-                <p id="p15">Loyal friend, ambitious and willing to do anything for his friend, Daniel. They have been friends since kindergarten. </p>
+                <p id="p15">
+                    Loyal friend, ambitious and willing to do anything for his friend, Daniel. They have been friends since kindergarten. 
+                </p>
+                
                 <p id="p20"><b id="b17">Chief: </b><br>Mr. James Cooper</p>
-                <p id="p15">Serious but friendly chief who is dedicated to stopping injustice, but is very stubborn. Has worked for the city for 20 years and has lots of experience.</p>
+                <p id="p15">
+                    Serious but friendly chief who is dedicated to stopping injustice, but is very stubborn. Has worked for the city for 20 years and has lots of experience.
+                </p>
+                
                 <p id="p20"><b id="b17">President: </b><br>Benjamin Foster</p>
-                <p id="p15">A confident and well liked president. Very important role.</p>
+                <p id="p15">
+                    A confident and well liked president. Very important role.
+                </p>
+                
                 <p id="p20"><b id="b17">Rich Friend: </b><br>Thomas Whiteman</p>
-                <p id="p15">A kind man and very charitable. Willing to help out his life long friend Daniel Harris.</p>
+                <p id="p15">
+                    A kind man and very charitable. Willing to help out his life long friend Daniel Harris.
+                </p>
+                
                 <p id="p20"><b id="b17">Mom: </b><br>Karren Harris</p>
-                <p id="p15">Mother of Daniel and cares deeply about her son. She is scared to see Daniek get caught into trouble. </p>
+                <p id="p15">
+                    Mother of Daniel and cares deeply about her son. She is scared to see Daniek get caught into trouble. 
+                </p>
             </div></center>
 
 
-            <center><div>
+            <center><section>
                 <b><h1>Story</h1></b>
                 <hr id="hrd">
-                <p id="p20">Inspector Daniel Harris, a dedicated and by-the-book cop, 
+                <p id="p20">
+                    Inspector Daniel Harris, a dedicated and by-the-book cop, 
                     has just received a promotion within the precinct. 
                     He's well-liked by his colleagues, but not everyone is thrilled about his ascent. 
                     Officer Max Inferno, a corrupt and ambitious cop, resents Harris's success 
-                    and secretly plots to undermine him.</p>
-            </div></center>
+                    and secretly plots to undermine him.
+                </p>
+            </section></center>
         </main>
     </body>
 </html>
