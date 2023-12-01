@@ -1,45 +1,52 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Game Instructions
-            <link rel="stylesheet" href="styles.css">
-        </title>
-    </head>
-    <body>
-      <nav class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Menu</button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="index.html">Home</a>
-          <a href="">Play Now!</a>
-          <a href="GameInstructions.html">Game Instructions</a>
-          <a href="GameClips.html">Game Clips</a>
-          <a href="BadgesAndAchievements.html">Badges and Achievements</a>
-          <a href="AboutTheCreators.html">About the Creators</a>
-        </div>
-      </nav>
+  <head>
+    <title>Game Instructions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap">
+</head>
 
-          <script>
-            /* When the user clicks on the button, 
-            toggle between hiding and showing the dropdown content */
-            function myFunction() {
-              document.getElementById("myDropdown").classList.toggle("show");
+  <body>
+    <nav class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Menu</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="">Play Now!</a>
+        <a href="GameInstructions.html"><b>Game Instructions</b></a>
+        <a href="GameClips.html">Game Clips</a>
+        <a href="BadgesAndAchievements.html">Badges and Achievements</a>
+        <a href="AboutTheCreators.html">About the Creators</a>
+      </div>
+    </nav>
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
             }
-            
-            // Close the dropdown if the user clicks outside of it
-            window.onclick = function(event) {
-              if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                  }
-                }
-              }
-            }
-            </script>        
-    </body>
+          }
+        }
+      }
+    </script>   
+
+    <center><main>
+      <h1>Game Instructions</h1>
+      <hr id="hrd">
+    </main></center>
+  </body>
 </html>

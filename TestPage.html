@@ -1,0 +1,85 @@
+<!doctype html>
+<head>
+    <title>Test Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .flip-box {
+            background-color: transparent;
+            height: 200px;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px; /* Remove this if you don't want the 3D effect */
+        }
+        
+        /* This container is needed to position the front and back side */
+        .flip-box-inner {
+            position: relative;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+        
+        /* Do an horizontal flip when you move the mouse over the flip box container */
+        .flip-box:hover .flip-box-inner {
+            transform: rotateY(180deg);
+        }
+        
+        /* Position the front and back side */
+        .flip-box-front, .flip-box-back {
+            position: absolute;
+            height: 100%;
+            -webkit-backface-visibility: hidden; /* Safari */
+            backface-visibility: hidden;
+            text-align:center;
+        }
+        
+        /* Style the front side */
+        .flip-box-front {
+            background-color: #bbb;
+            color: #441add;
+            text-align:center;
+        }
+        
+        /* Style the back side */
+        .flip-box-back {
+            background-color: #394466;
+            color: white;
+            transform: rotateY(180deg);
+        }
+        
+        #h2-atc {
+            text-align:center;
+            color:#441add;
+            font-size:30px;
+        }
+
+        #pRole-atc {
+            text-align:center;
+            color:#441add;
+            font-size:30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="flip-box">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <h2 id="h2-atc">Gulara Allahverdi</h2> <!--Name, check spelling-->
+                <p id="pRole-atc">Website Manager</p> <!--Role-->        
+            </div>
+            <div class="flip-box-back">
+                <h3 id="People-Discription">
+                    She was the Project Manager, making sure everyone does their work 
+                    and everything flows smoothly. She was also part of the HTML developer and website designer. 
+                    Some background information about her is, her favorite subjects are Math and Science. Her electives
+                    are Spanish, Intro to Computer, and Tennis. Her favorite activities are reading, solving puzzles, 
+                    watching movies, playing the piano, and hanging out with friends. Her favorite book is the Inheritance Games. 
+                    She likes hanging out with her friends inside and outside of school. She also likes going to the beach with her family. 
+                </h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

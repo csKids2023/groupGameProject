@@ -9,5 +9,5 @@ Push to Git from VS code
     4. Hit the commit button.
     5. After it loads, hit the Sync Changes button. (If you end up with conflicting changes, text the group chat)
     
-Pulling to Git from VS code
+Pulling to VS code from Git
     1.  

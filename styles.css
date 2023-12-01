@@ -27,42 +27,42 @@ section{
     font-size: 16px;
     border: none;
     cursor: pointer;
-  }
+}
   
-  /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #394466;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #544BF5;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
     position: relative;
     display: inline-block;
-  }
+}
   
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
+}
   
-  /* Links inside the dropdown */
-  .dropdown-content a {
+/* Links inside the dropdown */
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
+}
   
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
   
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
 
 a{
     color:#441add;
@@ -80,6 +80,14 @@ h1{
     font-size: 45px;
     text-align: center;
 }
+h2{
+    color:black;
+    font-size: 30px;
+    text-align: center;
+}
+h3{
+    text-align: left;
+}
 
 #h1-title{
     color: white !important;
@@ -87,18 +95,6 @@ h1{
     font-family: 'Dosis', sans-serif !important;
     text-align: center !important;
 }
-
-h2{
-    color:black;
-    font-size: 30px;
-    text-align: center;
-}
-
-
-h3{
-    text-align: left;
-}
-
 
 #p20{
     font-size: 20px;
@@ -133,8 +129,9 @@ h3{
 }
 
 
+/*For About the Creators page*/
 #hr-atc{
-    border: 3px solid white;
+    border: 3px solid white !important;
 }
 #h1-atc{
     color: #441add;
@@ -149,8 +146,6 @@ h3{
     color:#441add;
     font-size: 30px;
     text-align: center;
-
-
 }
 #pRole-atc{
     /* color: blue; */
@@ -158,14 +153,11 @@ h3{
     font-size: 15px;
     text-align: center;
 }
-#p15-atc{
+#People-Discription{
     font-size: 15px;
     text-align: left;
 }
 
-#People-Discription{
-    text-align: left;
-}
 
 #play:hover {
     animation: PlayAnimation 0.5s forwards;
@@ -174,7 +166,3 @@ h3{
 #play::after {
     animation: PlayAnimation 0.5s backwards;
 }
-
-/* header{
-    
-} */
