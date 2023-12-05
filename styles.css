@@ -10,6 +10,11 @@
     }
 }
 
+legend{
+    font-size: 25px;
+    color: #441add;
+}
+
 body{
     background-color:#b3c2f2;
     font-family: "Comic Sans";
