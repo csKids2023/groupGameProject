@@ -2,11 +2,14 @@
 
 This is where you can write notes to future website viewers and / or to group members to communicate.<br>
 <br>
-Need to add / change / edit:
+Need to add / change / edit:<br>
     1. Add a favicon<br>
     2. Play with different fonts(use google fonts and look into the fonts Horatio added)<br>
     3. Add "City Undercover" header and logos to each page, positioned the way we want<br>
     4. Add a footer with contact info for if any errors occur or if anyone needs help<br>
+    5. Switch "About the Creators" page to fieldsets with legends (with the bold-legend class)<br>
+    6. Switch ids to classes (because of rule with ids can only apply to certain code things)<br>
+    7. Rearrange style page based on placement and the webpage that it is on<br>
     <br>
 Push to Git from VS code<br>
     1. On the nav bar on the left side of the screen, go to the third icon from the top. The little y with dots on the ends.<br>
